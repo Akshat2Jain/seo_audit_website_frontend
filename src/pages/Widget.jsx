@@ -17,7 +17,7 @@ const Widget = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://seo-audit-website-server.pages.dev/api/audit_url",
+        "https://seo-audit-646a.onrender.com/api/audit_url",
         {
           url,
         }
