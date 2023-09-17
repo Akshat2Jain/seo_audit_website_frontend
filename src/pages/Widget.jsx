@@ -16,9 +16,12 @@ const Widget = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/audit_url", {
-        url,
-      });
+      const res = await axios.post(
+        "https://seo-audit-website-server.pages.dev/api/audit_url",
+        {
+          url,
+        }
+      );
       const track_id = res.data.id;
       if (res.data.success) {
         // setResult(res.data);
